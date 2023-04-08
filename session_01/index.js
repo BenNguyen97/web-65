@@ -32,7 +32,7 @@ const url = require("url");
 
 // fs.writeFileSync("./data.js", "const a = 1; console.log(a)");
 const serverListener = (req, res) => {
-  const userId = req.url.split("/").pop();
+  const userId = req.url.split("/").pop(); 
   switch (req.url) {
     case "/": {
       const htmlData = fs.readFileSync("./index.html", "utf-8");
